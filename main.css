@@ -16,6 +16,16 @@ a:hover{
     opacity: 0.5;
     transition: 0.1s;
 }
+
+
+
+
+.mobileNavButton{
+    display: none;
+}
+.mobilenav{
+    display: none;
+}
 /* ================================================================================= */
 /* =========================================ثوابت================================== */
 /* ================================================================================= */
@@ -31,13 +41,18 @@ a:hover{
 /* =======================================the body================================== */
 /* ================================================================================= */
 body{
-
+    background-color: #de8399;
+    padding-bottom: 300px;
 }
 
 /* ================================================================================= */
 /* =========================================header==================================== */
 /* ================================================================================= */
 header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
     height: 60px;
     display: flex;
     justify-content:space-around;
@@ -87,6 +102,116 @@ header .rightHeaderLinks ul li a img{
 /* =========================================main==================================== */
 /* ================================================================================= */
 main {
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
+}
+
+/* ================================================================================= */
+/* =======================================top-hero================================== */
+/* ================================================================================= */
+main .top-hero {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    margin-left: 50px;
+    /* width: 100%; */
+    justify-content: space-evenly;
+}
+
+main .top-hero .top-hero2{
+    display: flex;
+    align-items: center;
+
+}
+
+main .heroImg {
+    margin-bottom: -287px;
+}
+
+/* ================================================================================= */
+/* =======================================midHome=================================== */
+/* ================================================================================= */
+.midHome {
+    display: flex;
+    justify-content: space-around;
+}
+
+.midHome2{
+    display: flex;
+}
+
+.News{
+    margin-right: 40px;
+}
+
+.News, .Check {
+    background-color: white;
+    height: 442px;
+    width: 435px;
+    box-shadow: 00 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.News h2 {
+    color: #e05476;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.News a {
+    color: #515151;
+    font-size: 13px;
+    margin: 35px;
+}
+
+.Check {
+    display: flex;
+    flex-direction: column;
+}
+
+.Check h2{
+    color: #e05476;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Check .A {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Check .A img{
+    display: block;
+    outline: 3px solid #FFE2E9;
+    outline-offset: -3px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+
+}
+
+.Check .A img:hover{
+    opacity: 1;
+    outline: 6px solid #f08fa5;
+
+}
+
+
+
+.goods {
+    display: flex;
+    margin-top: 64px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goods img{
+    width: 911px;
+    box-shadow: 00 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }

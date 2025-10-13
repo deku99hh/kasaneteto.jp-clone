@@ -1,0 +1,92 @@
+/* ================================================================================= */
+/* =======================================the all=================================== */
+/* ================================================================================= */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    opacity: 0.5;
+    transition: 0.1s;
+}
+/* ================================================================================= */
+/* =========================================ثوابت================================== */
+/* ================================================================================= */
+.pinkText{
+    color: #E35577;
+}
+
+.hoverGrayerWighter:hover{
+    opacity: 0.5;
+}
+
+/* ================================================================================= */
+/* =======================================the body================================== */
+/* ================================================================================= */
+body{
+
+}
+
+/* ================================================================================= */
+/* =========================================header==================================== */
+/* ================================================================================= */
+header{
+    height: 60px;
+    display: flex;
+    justify-content:space-around;
+
+    box-shadow: 00 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+
+}
+
+header .leftHeaderLogo{
+    height: 100%;
+    display: flex;
+    align-items:center;
+}
+
+header .rightHeaderLinks{
+    height: 100%;
+    display: flex;
+    align-items:center;
+}
+
+header .rightHeaderLinks .headerLinks {
+    display: flex;
+    align-items: center;
+    margin-right: 47px;
+}
+
+header .rightHeaderLinks .headerIcons{
+    display: flex;
+    align-items: center;
+}
+
+header .rightHeaderLinks ul li{
+    list-style-type:none;
+}
+
+header .rightHeaderLinks ul li a {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 17px;
+}
+
+header .rightHeaderLinks ul li a img{
+    margin-right: 10px;
+}
+
+/* ================================================================================= */
+/* =========================================main==================================== */
+/* ================================================================================= */
+main {
+    display: flex;
+    flex-direction: column;
+}

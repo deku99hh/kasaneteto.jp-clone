@@ -17,15 +17,13 @@ a:hover{
     transition: 0.1s;
 }
 
-
-
-
-.mobileNavButton{
-    display: none;
+html {
+    background: url(imgsAndIcons/top-back2.svg) no-repeat;
+    background-size: 120%;
+    background-position: -286px 0px;
 }
-.mobilenav{
-    display: none;
-}
+
+
 /* ================================================================================= */
 /* =========================================ثوابت================================== */
 /* ================================================================================= */
@@ -40,10 +38,19 @@ a:hover{
 /* ================================================================================= */
 /* =======================================the body================================== */
 /* ================================================================================= */
-body{
-    background-color: #de8399;
-    padding-bottom: 300px;
+
+
+body::before {
+    opacity: 50%;
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    background: url(imgsAndIcons/top-back.svg);
+    z-index: -1;
+    background-size: 124%;
 }
+
 
 /* ================================================================================= */
 /* =========================================header==================================== */
@@ -115,7 +122,6 @@ main .top-hero {
     margin-top: 15px;
     align-items: center;
     margin-left: 50px;
-    /* width: 100%; */
     justify-content: space-evenly;
 }
 
@@ -147,8 +153,9 @@ main .heroImg {
 
 .News, .Check {
     background-color: white;
-    height: 442px;
-    width: 435px;
+    height: 437px;
+    padding-top: 10px;
+    width: 504px;
     box-shadow: 00 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -186,13 +193,13 @@ main .heroImg {
     align-items: center;
 }
 
-.Check .A img{
+.Check .A img {
     display: block;
     outline: 3px solid #FFE2E9;
     outline-offset: -3px;
     box-sizing: border-box;
     margin-bottom: 15px;
-
+    height: 90px;
 }
 
 .Check .A img:hover{
@@ -202,7 +209,9 @@ main .heroImg {
 }
 
 
-
+/* ================================================================================= */
+/* ========================================goods==================================== */
+/* ================================================================================= */
 .goods {
     display: flex;
     margin-top: 64px;
@@ -210,8 +219,78 @@ main .heroImg {
     align-items: center;
 }
 
-.goods img{
-    width: 911px;
+.goods img {
+    width: 1000px;
     box-shadow: 00 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+
+/* ================================================================================= */
+/* =====================================footer====================================== */
+/* ================================================================================= */
+footer {
+    color: white;
+    width: 100%;
+    background: #E35577;
+    margin-top: 50px;
+    padding: 65px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footerTop{
+    margin-bottom: 30px;
+}
+
+footer .footerMid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer .footerMid {
+    gap: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.linkBlockA {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.linkBlock a {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+.linkBlock a span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footerMidMid {
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+    padding: 0px 60px;
+}
+
+
+
+
+footer .footerBottom {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footerBottom img{
+    margin-bottom: 40px;
 }

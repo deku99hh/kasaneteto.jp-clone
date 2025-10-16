@@ -27,7 +27,8 @@
         padding-top: 25px;
         display: flex !important;
         background-color: #e35577;
-        height: 100%;
+        height: 100vh;
+        /* height: 100%; */
         width: 100%;
         margin-top: -20px;
         position: fixed;
@@ -38,6 +39,7 @@
         padding-left: 50px; 
 
         overflow: scroll;
+        overflow-y: auto;
 
         z-index: 98;
     }
